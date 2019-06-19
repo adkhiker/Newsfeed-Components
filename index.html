@@ -9,13 +9,23 @@
       media="screen"
       href="./CSS/index.css"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"
+      async
+    ></script>
     <script src="./Menu/Menu.js" async></script>
     <script src="./Article/Article.js" async></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"
+      async
+    ></script>
   </head>
+
   <body>
     <div class="header">
       <img class="menu-button" src="./assets/menu.png" />
-      <h1>Lambda School Newsfeed</h1>
+      <h1 class="tracking-in-expand">Lambda School Newsfeed</h1>
     </div>
     <div class="menu">
       <ul>
@@ -64,7 +74,7 @@
           calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth
           palpatine obi-wan mon.
         </p>
-        <span class="expandButton"></span>
+        <span class="expandButton"></span><span class="close">x</span>
       </div>
       <div class="article">
         <h2>Javascript and You, ES6</h2>
@@ -92,7 +102,7 @@
           second bedroom. Padma and Parvati Sorting Hat Minister of Magic blue
           turban remember my last.
         </p>
-        <span class="expandButton"></span>
+        <span class="expandButton"></span><span class="close">x</span>
       </div>
       <div class="article">
         <h2>React vs Angular vs Vue</h2>
@@ -136,7 +146,7 @@
           consectetur adipiscing elit. Nidorino Lorem ipsum dolor sit amet,
           consectetur adipiscing elit. Nidoking Lorem ipsum
         </p>
-        <span class="expandButton"></span>
+        <span class="expandButton"></span><span class="close">x</span>
       </div>
       <div class="article">
         <h2>Professional Software Development in 2018</h2>
@@ -178,7 +188,135 @@
           hodor hodor hodor?! Hodor hodor - hodor hodor hodor. Hodor. Hodor
           hodor... Hodor hodor hodor hodor hodor?
         </p>
-        <span class="expandButton"></span>
+        <span class="expandButton"></span><span class="close">x</span>
+      </div>
+      <div class="article">
+        <h2>It's Time for Coffee!</h2>
+        <p class="date">Dec 25th, 2018</p>
+        <p>
+          Coffee cortado, coffee turkish so frappuccino, beans aftertaste lungo
+          decaffeinated caramelization, acerbic est grinder, pumpkin spice wings
+          plunger pot filter single origin grinder sweet strong. Cup robusta
+          dripper con panna breve, seasonal, iced crema turkish robusta, skinny,
+          variety, frappuccino, extraction irish as frappuccino sugar flavour
+          mazagran seasonal sweet variety rich. Cinnamon froth arabica spoon
+          beans blue mountain dripper, spoon body viennese lungo cultivar blue
+          mountain kopi-luwak latte, spoon, cappuccino, instant flavour,
+          aromatic café au lait redeye siphon brewed. Barista chicory single
+          origin macchiato, white doppio, sugar galão shop mug coffee brewed
+          espresso kopi-luwak viennese espresso aged. Skinny, crema, beans
+          filter flavour decaffeinated sweet kopi-luwak, dripper con panna
+          espresso body as, cup, barista cinnamon ristretto crema irish filter
+          trifecta skinny.
+        </p>
+
+        <p>
+          Barista cup coffee, java single origin spoon beans sweet froth qui et
+          variety aged extraction. Redeye roast blue mountain mug qui
+          decaffeinated brewed, dripper macchiato et in grinder grounds filter
+          seasonal bar iced. Aromatic, sugar, half and half siphon milk, café au
+          lait extra, iced, cultivar cup cup mug wings viennese single origin.
+          Whipped single shot sweet steamed cultivar id et cinnamon pumpkin
+          spice con panna barista percolator organic mocha beans. Saucer so
+          strong, variety cup galão, aromatic et, galão cultivar, saucer arabica
+          viennese percolator americano sit blue mountain irish crema robusta.
+        </p>
+
+        <p>
+          Organic, java filter ristretto, shop, cultivar steamed café au lait
+          dark single shot blue mountain, filter cinnamon cream foam doppio
+          seasonal so ristretto cappuccino. French press flavour, grinder
+          caramelization con panna medium, as single origin frappuccino galão,
+          filter dripper roast frappuccino est saucer beans aftertaste irish
+          barista. Robust a kopi-luwak affogato seasonal variety half and half
+          crema chicory body cup whipped, milk, shop, coffee saucer grinder at
+          body kopi-luwak. Coffee café au lait brewed con panna, chicory,
+          espresso café au lait, mug to go crema brewed single shot con panna
+          turkish con panna percolator fair trade. Doppio to go ristretto
+          viennese, blue mountain plunger pot extra, eu arabica bar as brewed
+          skinny cortado.
+        </p>
+
+        <span class="expandButton"></span><span class="close">x</span>
+      </div>
+      <div class="article">
+        <h2>Zombies are Ringing in the New Year!</h2>
+        <p class="date">Jan 1st, 2019</p>
+        <p>
+          Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam
+          rick mend grimes malum cerveau cerebro. De carne cerebro lumbering
+          animata cervello corpora quaeritis. Summus thalamus brains sit​​,
+          morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger
+          omero prefrontal cortex undead survivor fornix dictum mauris. Hi
+          brains mindless mortuis limbic cortex soulless creaturas optic nerve,
+          imo evil braaiinns stalking monstra hypothalamus adventus resi
+          hippocampus dentevil vultus brain comedat cerebella pitiutary gland
+          viventium. Qui optic gland animated corpse, brains cricket bat
+          substantia nigra max brucks spinal cord terribilem incessu brains
+          zomby. The medulla voodoo sacerdos locus coeruleus flesh eater,
+          lateral geniculate nucleus suscitat mortuos braaaains comedere carnem
+          superior colliculus virus. Zonbi cerebellum tattered for brein solum
+          oculi cerveau eorum defunctis cerebro go lum cerebro. Nescio brains an
+          Undead cervello zombies. Sicut thalamus malus putrid brains voodoo
+          horror. Nigh basal ganglia tofth eliv ingdead.
+        </p>
+        <p>
+          Cum prefrontal cortex horribilem walking fornix dead resurgere brains
+          de crazed limbic cortex optic nerve sepulcris creaturis, braaaaaiins
+          zombie sicut hypothalamus de grave hippocampus feeding iride brainz et
+          serpens. Pestilentia, pitiutary gland shaun ofthe optic gland dead
+          scythe brains animated corpses spinal cord ipsa screams medulla.
+          Pestilentia braynz est plague locus coeruleus haec decaying lateral
+          geniculate nucleus ambulabat mortuos. Sicut breins zeder apathetic
+          superior colliculus malus voodoo. Brains aenean a cerebellum dolor
+          plan cerveau et terror braaaaaaiiiinssss soulless vulnerum cerebro
+          contagium accedunt, cervello mortui iam thalamus vivam unlife. Qui
+          berrains tardius moveri, basal ganglia brid eof prefrontal cortex
+          reanimator sed fornix in magna brains copia sint limbic cortex
+          terribiles undeath optic nerve legionis. Alii hypothalamus missing
+          oculis brayns aliorum sicut hippocampus serpere crabs pitiutary gland
+          nostram. Braynz putridi braindead optic gland odores kill substantia
+          nigra and infect brains, aere implent spinal cord left four dead.
+        </p>
+        <span class="expandButton"></span><span class="close">x</span>
+      </div>
+      <div class="article">
+        <h2>Donut and Coffee Go Together!</h2>
+        <p class="date">June 19th, 2019</p>
+        <p>
+          Apple jelly ipsum dolor apple tiramisu marzipan orange sugar dolor
+          cookie croissant marzipan sugar tiramisu vanilla orange cake marzipan
+          apple. Dolor apple cake dolor orange candy candy croissant marzipan
+          lollipop sweet muffin candy cream apple croissant orange lollipop
+          sugar marzipan. Cookie pastry muffin lollipop candy orange muffin
+          cookie cream dolor apple dolor pastry muffin marzipan ipsum cake jelly
+          orange apple. Lollipop biscuit orange cookie sugar ipsum tiramisu
+          orange cookie apple orange donut apple orange cream pastry lollipop
+          donut sprinkles croissant.
+        </p>
+        <p>
+          Dolor apple donut marzipan donut sweet pastry sprinkles sugar dolor
+          cake ipsum sprinkles apple ipsum jelly candy sprinkles apple candy.
+          Pastry donut donut sugar candy biscuit marzipan ipsum lollipop donut
+          orange donut sprinkles cream cream apple sprinkles marzipan tiramisu
+          lollipop. Croissant tiramisu cream cake biscuit marzipan lollipop
+          cream vanilla cookie sprinkles marzipan cake orange biscuit pastry
+          sprinkles cookie sugar sweet. Cream cake candy candy lollipop
+          croissant jelly pastry marzipan muffin sweet sugar dolor vanilla cake
+          cookie apple dolor sweet lollipop.
+        </p>
+        <p>
+          Muffin donut cake cake tiramisu muffin tiramisu jelly vanilla jelly
+          jelly candy candy candy dolor tiramisu apple sugar sugar marzipan.
+          Sweet sweet ipsum muffin biscuit tiramisu ipsum candy croissant dolor
+          apple ipsum dolor cake lollipop orange sprinkles dolor orange ipsum.
+          Jelly apple ipsum cookie apple biscuit lollipop muffin pastry cake
+          tiramisu croissant cream orange biscuit donut tiramisu ipsum lollipop
+          ipsum. Muffin cream muffin cookie candy apple lollipop cream vanilla
+          tiramisu muffin croissant dolor sweet marzipan ipsum cake muffin
+          sprinkles lollipop.
+        </p>
+        <span class="expandButton"></span><span class="close">x</span>
       </div>
     </div>
   </body>
