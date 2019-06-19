@@ -1,8 +1,6 @@
-
 let menuToggle = false;
 
 const toggleMenu = () => {
-  // Toggle the "menu--open" class on your menu refence.
   if (menuToggle === false) {
     setTimeout(function() {
       menuToggle = true;
@@ -21,14 +19,16 @@ const toggleMenu = () => {
     menuItems.classList.remove("menu__list--open");
   }
 };
-  
+
 // Start Here: Create a reference to the ".menu" class
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelector("ul");
 
 // create a reference to the ".menu-button" class
-const menuButton = document.querySelector(".menu-button");;
+const menuButton = document.querySelector(".menu-button");
 
+// Reference to html document
+const html = document.querySelector("html");
 
 // Using your menuButton reference, add a click handler that calls toggleMenu
 menuButton.addEventListener("click", event => {
