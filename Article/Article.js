@@ -5,11 +5,15 @@ class Article {
     this.domElement = domElement;
     this.expandButton = this.domElement.querySelector(".expandButton");
     this.closeButton = this.domElement.querySelector(".close");
+    this.newMethod();
+  }
+  newMethod() {
     this.expandButton.textContent = "expand";
     this.expandButton.addEventListener("click", () => this.expandArticle());
     this.closeButton.addEventListener("click", () => this.deleteArticle());
     allPanels.push(this);
   }
+
   expandArticle() {
     if (this.domElement.classList.contains("article-open")) {
       TweenMax.to(this.domElement, 1, { className: "-=article-open" });
@@ -27,7 +31,12 @@ class Article {
     TweenMax.to(this.domElement, 0.5, { opacity: 0, display: "none" });
   }
 }
-let articles = document.querySelectorAll(".article");
-articles.forEach(article => {
-  return new Article(article);
-});
+
+newFunction();
+function newFunction() {
+  let articles = document.querySelectorAll(".article");
+  articles.forEach(article => {
+    return new Article(article);
+  });
+}
+
