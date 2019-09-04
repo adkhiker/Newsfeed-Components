@@ -1,4 +1,4 @@
-﻿Greg Poirier
+﻿Greg Poirier 
 
 # Newsfeed-Components 
 
