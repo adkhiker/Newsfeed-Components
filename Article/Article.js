@@ -88,7 +88,7 @@ const data = [
   },
   {
     title: "Mass Chaos Reigns",
-    date: "Jun 21st, 2019",
+    date: "Aug 21st, 2019",
     firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
           hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
           Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
@@ -104,7 +104,7 @@ const data = [
   },
   {
     title: "Dragons are Coming!!!",
-    date: "Aug 19th, 2019",
+    date: "Sep 19th, 2019",
     firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
           hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
           Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
@@ -119,7 +119,6 @@ const data = [
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   }
 ];
-
 
 const articles = document.querySelector(".articles");
 
@@ -136,7 +135,6 @@ data.forEach(data => {
   );
 });
 
-
 function create(title, date, first, second, third) {
   const articles = document.createElement("div");
   const article = document.createElement("div");
@@ -149,7 +147,6 @@ function create(title, date, first, second, third) {
 
   console.log(articleDate);
 
- 
   articles.appendChild(article);
   article.appendChild(articleTitle);
   article.appendChild(articleDate);
@@ -158,7 +155,6 @@ function create(title, date, first, second, third) {
   article.appendChild(thirdPara);
   article.appendChild(expandButton);
 
-  
   article.classList.add("article");
   articleTitle.classList.add("h2");
   articleDate.classList.add("date");
@@ -174,7 +170,7 @@ function create(title, date, first, second, third) {
   thirdPara.textContent = third;
   expandButton.textContent = "expand";
 
-  ``
+  ``;
   expandButton.addEventListener("click", () => {
     article.classList.toggle("article-open");
   });
